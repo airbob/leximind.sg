@@ -327,7 +327,7 @@ p {
 }
 
 #testimonial-section {
-    background-color: var(--bg-color-1);
+    background-color: var(--bg-color-2);
     padding: 4rem 0; /* Reduced padding */
 }
 
@@ -646,7 +646,7 @@ footer p {
 
 
 #psych-notes {
-    background-color: var(--bg-color-2);
+    background-color: var(--bg-color-1);
     padding: 4rem 0;
 }
 
