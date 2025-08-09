@@ -771,3 +771,11 @@ body > main {
     font-size: 0.8rem;
     color: #888;
 }
+.activity-carousel {
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* IE/Edge legacy */
+}
+
+.activity-carousel::-webkit-scrollbar {
+  display: none;                /* Chrome/Safari */
+}
