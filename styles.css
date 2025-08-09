@@ -666,35 +666,6 @@ footer p {
     display: none;                   /* Chrome, Safari */
 }
 
-
-.note-card-container {
-    flex: 0 0 250px;
-    background-color: var(--bg-color-2);
-    border-radius: 6px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    padding: 1rem;
-    scroll-snap-align: start;
-    font-size: 1.05rem;     /* larger font */
-    line-height: 1.3;       /* tighter spacing */
-    color: var(--text-color);
-    height: 80px;           /* fixed height */
-    display: flex;
-    align-items: center;
-
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.note-card-container a.note-card {
-    text-decoration: none;
-    color: inherit;
-}
-
-.note-card-container:hover {
-    transform: scale(1.03);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-
 html, body {
     height: 100%;
     margin: 0;
@@ -732,4 +703,71 @@ body > main {
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* subtle shadow */
+}
+
+.note-card-container {
+    flex: 0 0 250px;
+    background-color: var(--bg-color-2);
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    padding: 1rem;
+    scroll-snap-align: start;
+    font-size: 1.05rem;     /* larger font */
+    line-height: 1.3;       /* tighter spacing */
+    color: var(--text-color);
+    height: 100px;           /* fixed height */
+    display: flex;
+    align-items: center;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.note-card-container a.note-card {
+    text-decoration: none;
+    color: inherit;
+}
+
+.note-card-container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.note-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.note-title {
+    flex: 1;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.note-footer {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.note-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.note-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.note-date {
+    font-size: 0.8rem;
+    color: #888;
 }
