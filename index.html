@@ -235,7 +235,8 @@
                         <span>地址: Midview city(Near BrightHill MRT)</span>
                      </li>
                   </ul>
-                  <a onclick="openWhatsApp()" class="cta-button">联络&预约</a>
+                  <a onclick="openCalendarly()" class="cta-button">在线预约</a>
+                  <a onclick="openWhatsApp()" class="cta-button">WhatsApp联络</a>
                </div>
                <div class="contact-description">
                   <h2>咨询费用</h2>
@@ -355,9 +356,24 @@
                  qrPopover.style.visibility = 'hidden';
              });
          });
-         function openWhatsApp() {
+         function openCalendarly() {
              window.open("https://calendly.com/yuxin-info/30min");
          }
+         function openWhatsApp() {
+        var phoneNumber = "+6587215849";
+        
+        // Define your custom message
+        var message = "Hello,I would like to arrange a conselling session:";
+        
+        // Encode the message for URL
+        var encodedMessage = encodeURIComponent(message);
+        
+        // Create the WhatsApp URL with the message
+        var url = "https://wa.me/" + phoneNumber + "?text=" + encodedMessage;
+        
+        // Open the URL in a new tab
+        window.open(url, '_blank');
+    }
       </script>
    </body>
 </html>
