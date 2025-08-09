@@ -779,3 +779,31 @@ body > main {
 .activity-carousel::-webkit-scrollbar {
   display: none;                /* Chrome/Safari */
 }
+/* Desktop appointment button */
+.appointment-btn {
+  background-color: var(--primary-color);
+  color: #fff !important;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.appointment-btn:hover {
+  background-color: transparent;
+  border-color: var(--primary-color);
+  color: var(--primary-color) !important;;
+}
+
+/* Mobile version */
+@media (max-width: 768px) {
+  .appointment-btn {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
