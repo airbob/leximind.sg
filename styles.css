@@ -194,7 +194,7 @@ p {
 
 #introduction {
     background-color: var(--bg-color-1);
-    padding: 6rem 0;
+    padding: 0.5rem 0;
 }
 
 .hero-only {
@@ -257,7 +257,7 @@ p {
 
 #services {
     background-color: var(--bg-color-2);
-    padding: 4rem 0;
+    padding: 1rem 0;
 }
 
 .services-list {
@@ -323,12 +323,12 @@ p {
 
 #contact {
     background-color: var(--bg-color-1);
-    padding: 4rem 0; /* Reduced padding */
+    padding: 1rem 0;
 }
 
 #testimonial-section {
     background-color: var(--bg-color-2);
-    padding: 4rem 0; /* Reduced padding */
+    padding: 1rem 0;
 }
 
 .contact-content {
@@ -587,7 +587,7 @@ footer p {
 
 #activities {
     background-color: var(--bg-color-2);
-    padding: 4rem 0;
+    padding: 1rem 0;
 }
 
 .activity-carousel {
@@ -647,7 +647,7 @@ footer p {
 
 #psych-notes {
     background-color: var(--bg-color-1);
-    padding: 4rem 0;
+    padding: 1rem 0;
 }
 
 .notes-carousel {
@@ -805,5 +805,23 @@ body > main {
     width: 80%;
     margin: 0 auto;
     text-align: center;
+  }
+}
+
+/* Hero Section H1 Styles */
+.hero-only h1 {
+  font-size: 1.2rem;           /* 基本字体大小 */
+  font-weight: 600;          /* 比 h3 稍厚一点 */
+  text-align: center;        /* 居中对齐 */
+  line-height: 1.4;
+  margin: 0 auto;
+  max-width: 50%;            /* 桌面端限制宽度 */
+}
+
+/* 小屏幕适配 */
+@media (max-width: 768px) {
+  .hero-only h1 {
+    font-size: 1.5rem;
+    max-width: 90%;          /* 移动端放宽宽度限制 */
   }
 }
