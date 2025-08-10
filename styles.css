@@ -226,17 +226,17 @@ p {
 }
 
 .about-image {
-    flex: 0 0 300px;
-    width: 300px;
-    height: 300px;
+    flex: 0 0 220px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     overflow: hidden;
 }
 
 .about-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 220px;     /* 原来 300px，改小 */
+  height: 220px;
+  object-fit: cover;
 }
 
 .about-name {
@@ -248,6 +248,28 @@ p {
 
 .about-education {
     text-align: left;
+    font-size: 0.9rem;   /* 原文较大，这里调小 */
+    line-height: 1.4;
+}
+
+.about-training,
+.about-education-list {
+    text-align: left;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* 受训背景列表缩进微调 */
+.about-education-list {
+  padding-left: 1rem;
+}
+
+/* 桌面端左列保持紧凑 */
+.about-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;   /* 元素间距小一些 */
 }
 
 .about-text {
@@ -825,3 +847,4 @@ body > main {
     max-width: 90%;          /* 移动端放宽宽度限制 */
   }
 }
+
